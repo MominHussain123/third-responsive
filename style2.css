@@ -1,0 +1,242 @@
+*{
+padding: 0;
+margin: 0;
+text-decoration: none;
+
+}
+body{
+    background-color: #f2f1f0;
+    height: 200px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:#30404d;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+ 
+    
+
+}
+.logo{
+    color: #f3efef;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.icons i{
+background-color:#ff6b35;
+color: #fff;
+padding: 20px;
+border-radius: 10px;
+}
+.icons i:hover{
+background-color:#fbf9f8;
+color: #ff6b35;
+padding: 20px;
+border-radius: 10px;
+
+}
+.navbar a{
+    font-size: 20px;
+    color: #fff;
+    margin-left: 10px;
+    background-color: #ff6b35;
+    padding: 10px 30px;
+    border-radius: 10px;
+    
+    
+}
+.navbar a:hover{
+    font-size: 20px;
+    color: #a10f0f;
+    margin-left: 10px;
+    background-color: rgb(243, 246, 241);
+    padding: 10px 30px;
+    
+}
+
+
+
+
+.navbar a:active{
+    font-size: 20px;
+    color: #2326d6;
+    margin-left: 10px;
+}
+
+.icons .fa-bars{
+    display: none;
+}
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 60px;
+    align-items: center;
+}
+.content{
+    width: 45%;
+}
+.content h1{
+    font-size: 50px;
+    padding-bottom: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#30404d;
+}
+.highlight{
+    color: #ff6b35;
+}
+p{
+    font-size: 20px;
+    padding-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button{
+    border: none;
+    outline: none;
+    background-color: #ff6b35;
+    padding: 7px;
+    width: 100px;
+    color: #fbf9f8;
+    font-size: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+button:hover{
+    background: #f3efef;
+    color: #ff6b35;
+    border: 2px solid #ff6b35;
+}
+.image{
+    width: 45%;
+}
+img{
+    width: 100%;
+}
+table{
+    margin: 20px;
+    padding:20px ;
+  border-color: #ff6b35;
+}
+.footer{
+    background:#30404d;
+    display: flex;
+    justify-content: space-around;
+    padding:40px;
+    /* text-align: center;  */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.right h1{
+       color: #f2f1f0;
+       padding-bottom: 10px;
+}
+.right i{
+background-color:#ff6b35;
+color: #fff;
+padding: 10px;
+border-radius: 10px;
+}
+.mid h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: #f2f1f0;
+}
+.mid p{
+    line-height: 30px;
+    color: #f3efef;
+    font-size: 20px;
+}
+.left h1{
+     color: #fff;
+     padding-bottom: 10px;
+}
+
+.mid{
+    width: 40%;
+    text-align: center;
+}
+.left a{
+    display: block;
+    background-color: #ff6b35;
+    padding: 10px;
+    margin-top: 8px;
+    border: 2px solid #ff6b35;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+.left a:hover{
+    background-color: transparent;
+    color: #ff6b35;
+    
+}
+.copyright{
+    background-color: #575f63;
+    text-align: center;
+    color: #f2f1f0;
+  padding-top: 20px;
+}
+
+
+
+@media (max-width:716px){
+    .navbar{
+        position: absolute;
+        top: -100px;
+    }
+    .icons .fa-bars{
+        display: inline-block;
+    }
+
+   
+
+    .logo{
+        color: #fff;
+        font-size: 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .section{
+        display: flex;
+        flex-direction: column-reverse ;
+        justify-content: center;
+        /* padding-bottom:40px; */
+        align-items: center;
+        text-align: center;
+    }
+    .header{
+        z-index: 10;
+    }
+    .icons i{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .icons i:hover{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .content{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+    }
+    .footer{
+        
+        flex-direction: column;
+    
+}
+.left{
+    width: 100%;
+}
+.mid{
+    width: 100%;
+    margin-top: 10px;
+}
+
+}

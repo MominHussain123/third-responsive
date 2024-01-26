@@ -1,0 +1,127 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.header{
+    display: flex;
+    padding: 20px 4%;
+    background-color:  rgb(83, 115, 138);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+}
+.logo{
+    font-size:25px ;
+    color: #fff;
+}
+.navbar a{
+    font-size: 17px;
+    color: #fff;
+    margin-left: 7px;
+    background-color: rgb(121, 148, 79);
+    padding: 10px;
+
+
+}
+
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+   
+  
+    
+}
+.content{
+    width: 40%;
+}
+.image{
+    width: 40%;
+}
+.image img{
+    width: 100%;
+}
+.icons i{
+    background-color:rgb(121, 148, 79);
+    color: #fff;
+    padding: 10px;
+    
+}
+.content h1{
+    font-size: 45px;
+    padding-bottom: px;
+}
+.content p{
+    font-size: 15px;
+    padding-bottom: 10px;
+        
+}
+.content button{
+    outline: none;
+    padding: 15px 20px;
+    background-color: rgb(121, 148, 79);
+    border-color:orangered ;
+    color: #fff;
+}
+.content button:hover{
+   
+    background-color: rgb(242, 239, 238);
+    border-color:rgb(206, 67, 12) yellowgreen yellow lightblue ;
+    color: #df1616;
+}
+.highlight{
+    color:rgb(121, 148, 79);
+}
+.icons .fa-bars{
+    display: none;
+}
+
+@media (max-width:992px){
+  
+}
+@media (max-width:768px){
+    .section{
+        position: relative;
+        top: 100px;
+    }
+    .image{
+        width: 400px;
+     
+    }
+}
+@media (max-width:420px){
+    
+    
+    .section{
+        position: relative;
+        top: 60px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .content{
+        width: 300px;
+    }
+    .image{
+        width: 300px;
+    }
+    .navbar{
+        position: absolute;
+        top: -99px;
+    }
+    .icons .fa-bars{
+        display: inline-block;
+    }
+}
